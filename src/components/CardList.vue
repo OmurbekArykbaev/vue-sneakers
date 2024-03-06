@@ -1,5 +1,9 @@
 <script setup>
 import Card from './Card.vue'
+
+const onClickAdd = () => {
+  alert('KUKU')
+}
 </script>
 
 <template>
@@ -8,9 +12,8 @@ import Card from './Card.vue'
       image-url="/sneakers/sneakers-1.jpg"
       title="Мужские кроссовки Nike Blazzer Mid Suede"
       :price="1200"
+      :is-favorite="true"
+      :on-click-add="onClickAdd"
     />
-    <Card />
-    <Card />
-    <Card />
   </div>
 </template>
